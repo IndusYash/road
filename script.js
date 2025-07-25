@@ -170,7 +170,7 @@ async function fetchGovernmentData(roadName, indianRoadType, lat, lon, addressCo
     // **IMPORTANT: This URL will point to YOUR backend function.**
     // Example: const backendProxyUrl = '/api/gov-data-proxy';
     // You will send the identified road info to your backend.
-    const backendProxyUrl = 'http://localhost:3000/api/gov-data-proxy'; // Placeholder for local testing with a dummy backend
+    const backendProxyUrl = 'https://road-ecru.vercel.app/'; // Placeholder for local testing with a dummy backend
 
     try {
         const response = await fetch(backendProxyUrl, {
