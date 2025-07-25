@@ -1,0 +1,13 @@
+{
+  "name": "road-info-finder-website",
+  "version": "1.0.0",
+  "description": "A website to find road information using free APIs.",
+  "main": "api/gov-data-proxy.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+    
+  }
+}
