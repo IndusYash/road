@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Road Info Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Free Road Identifier</h1>
+    <button id="findRoadBtn">Find My Road Info</button>
+
+    <div id="loading" style="display: none; color: gray; margin-top: 10px;">Loading road information...</div>
+
+    <div id="roadInfo" style="margin-top: 20px;">
+        <h2>Detected Location:</h2>
+        <p><strong>Latitude:</strong> <span id="latitude">N/A</span></p>
+        <p><strong>Longitude:</strong> <span id="longitude">N/A</span></p>
+        <p><strong>Approx. Address:</strong> <span id="address">N/A</span></p>
+        <p><strong>Road Name (from OSM):</strong> <span id="roadName">N/A</span></p>
+        <p><strong>OSM Highway Type:</strong> <span id="osmHighwayType">N/A</span></p>
+        <p><strong>Inferred Indian Road Type:</strong> <span id="indianRoadType">N/A</span></p>
+
+        <div id="govtData" style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px;">
+            <h3>Government Records (via free backend proxy):</h3>
+            <p id="govtStatus">Fetching data from data.gov.in...</p>
+            <pre id="govtContent"></pre>
+        </div>
+
+        <div id="aiInsights" style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px;">
+            <h3>Web Search & AI Insights (Conceptual/Manual in Free Tier):</h3>
+            <p>Automated web search and AI analysis require paid APIs. For now, you can try:</p>
+            <p><strong>Manual Web Search:</strong> "Information about <span id="manualSearchQuery"></span>"</p>
+            <p id="aiStatus">AI integration (e.g., for summarization) requires a paid LLM API. This feature is not available in the free tier.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
